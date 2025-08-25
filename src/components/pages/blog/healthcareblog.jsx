@@ -106,12 +106,12 @@ const HealthCare = () => {
               <p className="font-avenir font-normal text-gray-800 
                      text-xs sm:text-sm md:text-base lg:text-lg 
                      opacity-70 leading-tight">
-                Balakrishnan K N
+               Vignesh Kothandaraman
               </p>
               <p className="font-avenir text-gray-500 
                      text-[10px] sm:text-xs md:text-sm lg:text-base 
                      opacity-40 italic mt-[2px]">
-                Founding partner, VibeXio
+                Managing partner, VibeXio
               </p>
             </div>
           </div>

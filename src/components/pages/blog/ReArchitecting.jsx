@@ -161,7 +161,7 @@ const MarketingBlog = () => {
               <p className="font-avenir font-normal text-gray-800 
                      text-xs sm:text-sm md:text-base lg:text-lg 
                      opacity-70 leading-tight">
-                Balakrishnan K N
+                Venkatesh Murugesan
               </p>
               <p className="font-avenir text-gray-500 
                      text-[10px] sm:text-xs md:text-sm lg:text-base 
