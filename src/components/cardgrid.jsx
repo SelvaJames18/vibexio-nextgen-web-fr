@@ -21,7 +21,7 @@ const cards = [
     },
   },
   {
-    title: 'Digital Intelligence for a Healthier Future',
+    title: 'Digital Intelligence for a Healthcare Future',
     image: healthImg,
     backContent: {
       backTitle: 'Innovating Healthcare Through Intelligent Digital Solutions',
