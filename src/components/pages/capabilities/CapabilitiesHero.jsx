@@ -19,11 +19,14 @@ const CapabilitiesHero = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-[1400px] lg:translate-y-[-30px]">
 
 
-        <div className="text-center lg:text-left max-w-xl">
-          <h1 className="text-[22px] sm:text-[32px] lg:text-[40px]font-light leading-[160%] tracking-[0.01em] mb-6">
-            Architects of Intelligence. Strategists of Scale.
+        <div className="text-center lg:text-left max-w-lg xl:w-[442px]">
+          <h1 className="text-[22px] sm:text-[32px] lg:text-[40px] font-light tracking-[0.01em]">
+            Architects of Intelligence.
           </h1>
-          <p className="font-light opacity-50 text-[14px] sm:text-[18px] lg:text-[20px] leading-[160%] tracking-[0.01em]">
+          <h1 className="text-[22px] sm:text-[32px] lg:text-[40px] font-light leading-[160%] tracking-[0.01em] mb-6">
+            Strategists of Scale.
+          </h1>
+          <p className="font-light opacity-50 text-[14px] sm:text-[18px] lg:text-[20px] leading-[160%] tracking-[1%]">
             Our multidisciplinary capabilities empower future-ready businesses through seamless digital transformation, transformative design thinking, and advanced intelligent systems.
           </p>
         </div>
