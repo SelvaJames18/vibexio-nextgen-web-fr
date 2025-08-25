@@ -228,10 +228,10 @@ const ProcessTimeline = () => {
           <img
             src={indexFingerIcon}
             alt="Click icon"
-            className=" absolute w-[50px] h-[50px] lg:hidden left-[90px] top-[340px] md:left-[144px]"
+            className=" absolute w-[50px] h-[50px] lg:hidden left-[90px] top-[380px] md:left-[144px]"
           />
           <motion.div
-            className="bg-black absolute left-[66px] top-[415px] sm:left-[67px] sm:top-[350px] md:left-[105px] md:top-[400px] lg:left-[175px] lg:top-[450px] xl:left-[350px] xl:top-[480px] w-[0.4px]"
+            className="bg-black absolute left-[72px] top-[460px] sm:left-[67px] sm:top-[50px] md:left-[110px] md:top-[430px] lg:left-[184px] lg:top-[460px] xl:left-[360px] xl:top-[480px] w-[0.4px]"
             initial={{ height: 0, opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{

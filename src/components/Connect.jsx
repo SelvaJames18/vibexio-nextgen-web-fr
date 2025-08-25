@@ -193,7 +193,7 @@ const Connect = () => {
         <div className="flex flex-col xl:flex-row gap-8 xl:gap-10 max-w-7xl mx-auto">
 
           {/* Branding Section - visible on all screens */}
-          <div className=" w-full xl:max-w-[476px] md:rounded-[10px] bg-[#9A8DA0] 
+          <div className=" w-full xl:max-w-[476px] rounded-[10px] bg-[#9A8DA0] 
             flex flex-col justify-center items-center xl:items-start px-4 py-6 xl:px-[32px] xl:py-[80px] 
             animate-[brandingPulseDesktop_15s_ease-in-out_infinite] 
             xl:animate-[brandingPulseMobile_15s_ease-in-out_infinite]">
@@ -205,8 +205,8 @@ const Connect = () => {
             animate-[buildAnim_10s_ease-in-out_infinite] text-shadow-[4px_4px_6px_rgba(255,255,255,0.5)]">BUILD.</p>
             <p className="font-['Poppins'] font-bold text-xl sm:text-2xl md:text-3xl xl:text-[36px]
              mb-4 xl:mb-[24px] tracking-wide sm:tracking-wider md:tracking-[10px] xl:tracking-[10px] 
-             animate-[breakthroughAnim_10s_ease-in-out_infinite] text-shadow-[4px_4px_6px_rgba(255,255,255,0.5)] pb-[82px]">BREAKTHROUGH.</p>
-            <p className="font-['Nunito'] font-bold text-xs sm:text-sm md:text-base xl:text-[24px] 
+             animate-[breakthroughAnim_10s_ease-in-out_infinite] text-shadow-[4px_4px_6px_rgba(255,255,255,0.5)] xl:pb-[82px]">BREAKTHROUGH.</p>
+            <p className="hidden xl:block font-['Nunito'] font-bold text-xs sm:text-sm md:text-base xl:text-[24px] 
             opacity-40 xl:leading-[46px] xl:tracking-[7px] animate-[rolloutAnim_10s_ease-in-out_infinite]">Reach Out & 
             <br />
             Let's Roll</p>

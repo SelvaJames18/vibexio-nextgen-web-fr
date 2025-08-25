@@ -34,7 +34,7 @@ const AboutUs = () => {
      bg-[#121212] text-white overflow-hidden relative">
       <div
         ref={ref}
-        className=" w-full max-w-[1920px] mx-auto grid grid-cols-2 gap-8 px-28 pt-10 md:pt-24 pb-[250px] min-h-[900px] relative 
+        className=" w-full max-w-[1920px] mx-auto grid grid-cols-2 gap-8 px-28 pt-10 lg:pt-24 pb-[250px] min-h-[900px] relative 
           max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:px-6 max-[1024px]:pb-20"
       >
         {/* Digital Consultants */}
