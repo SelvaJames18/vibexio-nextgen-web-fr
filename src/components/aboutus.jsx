@@ -34,7 +34,7 @@ const AboutUs = () => {
      bg-[#121212] text-white overflow-hidden relative">
       <div
         ref={ref}
-        className=" w-full max-w-[1920px] mx-auto grid grid-cols-2 gap-8 px-28 pt-10 lg:pt-24 pb-[250px] min-h-[900px] relative 
+        className=" w-full max-w-[1920px] mx-auto grid grid-cols-2 gap-8 px-28 pt-10 lg:pt-24 lg:pb-[250px] min-h-[900px] relative 
           max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:px-6 max-[1024px]:pb-20"
       >
         {/* Digital Consultants */}
@@ -89,7 +89,7 @@ const AboutUs = () => {
 
         {/* Strategic Partner */}
         <motion.div
-          className="bg-[#232323] rounded-xl shadow-lg p-6 w-[850px] h-[171px] relative bottom-[110px] xl:right-[120px]
+          className="bg-[#232323] rounded-xl shadow-lg p-6 w-[850px] xl:w-[1050px] h-[171px] relative bottom-[110px] xl:right-[120px]
            max-xl:left-[-100px]
             max-[1440px]:right-[80px] max-[1280px]:right-0 max-[1024px]:static max-[1024px]:w-full max-[1024px]:h-auto"
           variants={slideRight}
@@ -98,8 +98,8 @@ const AboutUs = () => {
           custom={0}
         >
           <motion.h2
-            className="text-[#D6BF7C] text-2xl font-bold mb-5 opacity-90 relative ml-[580px] top-[40px] max-xl:left-[400px]
-              max-[1440px]:ml-[550px] max-[1440px]:top-10 max-[1280px]:ml-[180px] max-[1024px]:static
+            className="text-[#D6BF7C] text-2xl font-bold mb-5 opacity-90 relative ml-[550px] top-[40px] max-xl:left-[400px]
+             xl:ml-[750px] max-[1440px]:top-10 max-[1280px]:ml-[180px] max-[1024px]:static
                max-[1024px]:ml-0 max-[1024px]:text-xl"
             variants={slideRight}
             custom={0.1}
@@ -108,7 +108,7 @@ const AboutUs = () => {
           </motion.h2>
           <motion.p
             className="text-[#EDECE9] text-sm leading-8 w-[482px] relative bottom-[40px]  max-xl:left-[40px]
-              max-[1440px]:bottom-10 xl:ml-[30px] max-[1024px]:static max-[1024px]:w-full max-[1024px]:text-base max-[1024px]:leading-6"
+              max-[1440px]:bottom-10 xl:ml-[212px] max-[1024px]:static max-[1024px]:w-full max-[1024px]:text-base max-[1024px]:leading-6"
             variants={slideRight}
             custom={0.2}
           >
