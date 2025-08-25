@@ -135,22 +135,37 @@ const MarketingBlog = () => {
       </div>
 
       {/* --- Main Content (Part 1 - Before Diagram) --- */}
-      <div className="max-w-none lg:max-w-3xl mx-auto px-4 sm:px-6 lg:pr-[70px] pt-8 lg:pt-12 lg:pb-0 space-y-10 lg:ml-[40%]">
-        {/* Author Section */}
-        <div className="flex justify-center lg:justify-end px-2 lg:px-0">
-          <div className="flex items-start gap-3 max-w-[300px] lg:mr-[20px]">
-            <div className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
+      <div className="max-w-none lg:max-w-3xl mx-auto px-4 sm:px-6 lg:pr-[70px] pt-8 lg:pt-12 lg:pb-0 space-y-5 lg:space-y-10 lg:ml-[40%]">
+         {/* Author Section */}
+        <div className="flex justify-end px-4 md:px-6 lg:px-8">
+          <div className="flex items-start gap-3 max-w-[280px] sm:max-w-[300px] md:max-w-[340px] lg:mr-[20px]">
+
+            {/* Profile Image */}
+            <div
+              className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px] 
+                 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
               style={{
-                background: 'rgba(169, 151, 133, 0.5)',
-                boxShadow: 'inset 0px 3px 4px rgba(0, 0, 0, 0.25)',
-              }}>
-              <img src={dp} alt="Balakrishnan K N" className="w-[30px] h-[30px] object-cover opacity-30" />
+                background: "rgba(169, 151, 133, 0.5)",
+                boxShadow: "inset 0px 3px 4px rgba(0, 0, 0, 0.25)",
+              }}
+            >
+              <img
+                src={dp}
+                alt="Balakrishnan K N"
+                className="w-[28px] h-[28px] sm:w-[30px] sm:h-[30px] md:w-[34px] md:h-[34px] object-cover opacity-30"
+              />
             </div>
-            <div className="flex flex-col text-left">
-              <p className="font-avenir font-normal text-gray-800 text-sm sm:text-base lg:text-lg opacity-70 leading-tight tracking-normal">
+
+            {/* Name + Role */}
+            <div className="flex flex-col sm:text-left">
+              <p className="font-avenir font-normal text-gray-800 
+                     text-xs sm:text-sm md:text-base lg:text-lg 
+                     opacity-70 leading-tight">
                 Balakrishnan K N
               </p>
-              <p className="font-avenir text-gray-500 text-xs sm:text-sm lg:text-base opacity-[0.39] italic mt-[2px] leading-[1.74] tracking-normal">
+              <p className="font-avenir text-gray-500 
+                     text-[10px] sm:text-xs md:text-sm lg:text-base 
+                     opacity-40 italic mt-[2px]">
                 Founding partner, VibeXio
               </p>
             </div>
@@ -266,7 +281,7 @@ const MarketingBlog = () => {
 
           <div className="font-avenir text-xs sm:text-sm lg:text-base text-gray-800 leading-[1.74] tracking-normal space-y-6 text-justify font-normal">
             <div>
-              <h2 className="font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
+              <h2 className="opacity-70 font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
                 1. Adaptive Personalization Frameworks
               </h2>
               <p className="font-avenir font-normal text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify">
@@ -277,9 +292,9 @@ const MarketingBlog = () => {
             </div>
 
             <div>
-              <h2 className="font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
+              <h2 className="opacity-70 font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
                 2. Intelligent Curriculum Orchestration
-              </h2>
+              </h2> 
               <p className="font-avenir font-normal text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify">
                 Our architectural frameworks allow for flexible sequencing and modular curriculum design —
                 dynamically adapting based on the learner's journey. These systems can reprioritize topics,
@@ -288,7 +303,7 @@ const MarketingBlog = () => {
             </div>
 
             <div>
-              <h2 className="font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
+              <h2 className="opacity-70 font-avenir font-extrabold text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify mb-2">
                 3. Cognitive-Aware Assessment Loops
               </h2>
               <p className="font-avenir font-normal text-xs sm:text-sm lg:text-base leading-[1.74] tracking-normal text-justify">
@@ -302,7 +317,7 @@ const MarketingBlog = () => {
       </div>
 
       {/* Mid Section Quote */}
-      <div className="flex justify-center items-center w-full py-10 lg:py-20 px-4 lg:px-6">
+      <div className="flex justify-center items-center w-full lg:py-20 px-4 lg:px-6">
         <div className="bg-black w-full max-w-[1034px] h-auto lg:w-[1034px] lg:h-[288px] rounded-3xl lg:rounded-[83px] px-6 lg:px-12 py-8 lg:py-10 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-12 text-white shadow-xl overflow-hidden">
 
           {/* Left Side - Icon with Glow Effect (Increased Size) */}
@@ -346,7 +361,7 @@ const MarketingBlog = () => {
         <div className="relative max-w-full lg:max-w-[800px] mx-auto px-4 sm:px-6 lg:px-6 font-avenir">
           <div className="relative mb-6 pl-8 lg:pl-0">
             <img src={bulletin} alt="Bulletin" className="absolute left-0 lg:-left-[40px] top-2 w-5 lg:w-7 h-3 lg:h-4" />
-            <h2 className="font-kollektif text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-[1.74] tracking-normal">
+            <h2 className="font-kollektif text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-[1.74] tracking-normal opacity-70">
               System Blueprint: A Strategic Overview
             </h2>
           </div>
@@ -354,7 +369,7 @@ const MarketingBlog = () => {
       </div>
 
       {/* === FULL-WIDTH DIAGRAM SECTION === */}
-      <div className="w-full py-8 lg:py-12">
+      <div className="w-full lg:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mobile: Vertical Stack */}
           <div className="lg:hidden flex flex-col items-center gap-8">
@@ -364,9 +379,9 @@ const MarketingBlog = () => {
           </div>
 
           {/* Desktop: Zig-Zag Grid with Image Arrows */}
-          <div className="hidden lg:grid grid-cols-5 gap-x-8 items-center min-h-[500px]">
+          <div className="hidden lg:grid grid-cols-5 gap-x-8 items-center min-h-[500px] opacity-70">
             {/* Row 1 */}
-            <div className="relative flex justify-center items-start pt-4">
+            <div className="relative flex justify-center items-start pt-4 ">
               <BlueprintCard {...blueprintData.userExperience} />
               <img src={Downward} alt="" className="absolute w-20 bottom-[-20px] right-[-65px] pointer-events-none" />
             </div>
@@ -396,7 +411,7 @@ const MarketingBlog = () => {
       </div>
 
       {/* --- Main Content (Part 2 - After Diagram) --- */}
-      <div className="max-w-none lg:max-w-3xl mx-auto px-4 sm:px-6 lg:pr-[70px] pt-8 lg:pt-12 space-y-10 lg:ml-[40%]">
+      <div className="max-w-none lg:max-w-3xl mx-auto px-4 sm:px-6 lg:pr-[70px] pt-8 lg:pt-12 space-y-5 lg:space-y-10 lg:ml-[40%]">
         {/* Outcomes Section */}
         <div className="relative max-w-full lg:max-w-[800px] mx-auto px-4 sm:px-6 lg:px-6 font-avenir">
           <div className="relative mb-6 pl-8 lg:pl-0">
@@ -429,7 +444,7 @@ const MarketingBlog = () => {
           <div className="lg:absolute lg:-left-[300px] lg:top-[150px] w-full lg:max-w-[245px] mx-auto lg:mx-0 mb- lg:mb-0 -translate-y-[33%]">
             {/* Card Container - Responsive */}
             <div
-              className="relative w-full lg:w-[245px] h-auto lg:h-[368px] bg-[#ccc6bd] rounded-[20px] px-6 pt-6 pb-4 lg:pb-6 text-left shadow-md mt-[60px] lg:mt-0"
+              className="relative w-full lg:w-[245px] h-auto lg:h-[368px] bg-[#ccc6bd] rounded-[20px] px-6 pt-6 pb-4 lg:pb-6 text-left shadow-md mt-[110px] lg:mt-[60px] lg:mt-0"
               style={{ backgroundColor: 'rgba(204, 198, 189, 0.17)' }}
             >
 
@@ -509,7 +524,8 @@ const MarketingBlog = () => {
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-2 w-5 lg:w-7 h-3 lg:h-4"
             />
-            <h2 className="font-kollektif font-bold text-lg sm:text-xl lg:text-[24px] leading-[1.84] opacity-70 text-gray-900 tracking-[0%]">
+            <h2 className="font-kollektif font-bold text-lg sm:text-xl lg:text-[24px] leading-[1.84]
+             opacity-70 text-gray-900 tracking-[0%]">
               VibeXio.ai: Your Strategic Partner in Educational Intelligence
             </h2>
           </div>
@@ -526,12 +542,11 @@ const MarketingBlog = () => {
           </div>
         </div>
       </div>
-      {/* Bottom Section */}
-      {/* Bottom Section */}
-      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8 pb-20 lg:px-40">
+        {/* Bottom Section */}
+      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8  pb-10 lg:pb-20 lg:px-30 xl:px-40">
         {/* Recommended Articles */}
         <div className="space-y-4 lg:mt-[80px] w-full lg:w-[260px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center">
+          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center opacity-70">
             Recommended Articles
           </h3>
           <div className="h-[60px] lg:h-[65px] bg-[#EDECE9] rounded-[16px] w-full border border-[#D3D1CB] shadow-[0_2px_8px_rgba(0,0,0,0.06)]" />
@@ -540,8 +555,8 @@ const MarketingBlog = () => {
         </div>
 
         {/* Comment Box */}
-        <div className="flex-1 lg:mt-[120px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
+        <div className="flex-1 lg:mt-[148px]">
+          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold opacity-70 text-gray-800 mb-2 text-center xl:text-start">
             Share your thoughts below!
           </h3>
           <p className="text-xs text-gray-500 italic mb-2">

@@ -13,7 +13,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const WhatsChangingCard = ({ topPosition }) => (
 
   <div
-    className={`lg:absolute lg:-left-[300px] ${topPosition} w-[245px] h-[331px] mx-auto lg:mx-0 mb-8 lg:mb-0`}
+    className={`lg:absolute lg:-left-[300px] ${topPosition} w-[245px] lg:h-[331px] mx-auto lg:mx-0 mb-8 lg:mb-0`}
   >
     <div className="relative bg-[#ccc6bd]/[0.17] rounded-[20px] px-5 pt-6 pb-4 text-left shadow-md w-full h-full">
 
@@ -50,7 +50,7 @@ const WhatsChangingCard = ({ topPosition }) => (
 
 const DidYouKnowCard = ({ topPosition }) => (
   <div
-    className={`relative lg:absolute lg:-left-[300px] ${topPosition} w-[245px] h-[302px] mx-auto lg:mx-0 mb-8 lg:mb-0`}
+    className={`relative lg:absolute lg:-left-[300px] ${topPosition} w-[245px] lg:h-[302px] mx-auto lg:mx-0 mb-8 lg:mb-0`}
   >
     <div className="relative w-full h-full bg-[#ccc6bd]/[0.17] rounded-[20px] px-5 pt-6 pb-4 text-left shadow-md">
 
@@ -85,8 +85,8 @@ const DidYouKnowCard = ({ topPosition }) => (
 
 const strategy = () => {
   const [comment, setComment] = useState("");
-    const [error, setError] = useState("");
-  
+  const [error, setError] = useState("");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -154,31 +154,41 @@ const strategy = () => {
       {/* Content Container */}
       <div className="max-w-none lg:max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 py-8 lg:py-12 space-y-10 lg:ml-[40%]">
         {/* Author Section */}
-        <div className="flex justify-center lg:justify-end px-2 lg:px-0">
-          <div className="flex items-start gap-3 max-w-[300px] lg:mr-[20px]">
+        <div className="flex justify-end px-4 md:px-6 lg:px-8">
+          <div className="flex items-start gap-3 max-w-[280px] sm:max-w-[300px] md:max-w-[340px] lg:mr-[20px]">
+
+            {/* Profile Image */}
             <div
-              className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
+              className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px] 
+                 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
               style={{
-                background: 'rgba(169, 151, 133, 0.5)',
-                boxShadow: 'inset 0px 3px 4px rgba(0, 0, 0, 0.25)',
+                background: "rgba(169, 151, 133, 0.5)",
+                boxShadow: "inset 0px 3px 4px rgba(0, 0, 0, 0.25)",
               }}
             >
               <img
                 src={dp}
                 alt="Balakrishnan K N"
-                className="w-[30px] h-[30px] object-cover opacity-30"
+                className="w-[28px] h-[28px] sm:w-[30px] sm:h-[30px] md:w-[34px] md:h-[34px] object-cover opacity-30"
               />
             </div>
-            <div className="flex flex-col text-left">
-              <p className="font-avenir font-normal text-gray-800 text-sm sm:text-base lg:text-lg opacity-[70%] leading-tight">
+
+            {/* Name + Role */}
+            <div className="flex flex-col sm:text-left">
+              <p className="font-avenir font-normal text-gray-800 
+                     text-xs sm:text-sm md:text-base lg:text-lg 
+                     opacity-70 leading-tight">
                 Balakrishnan K N
               </p>
-              <p className="font-avenir text-gray-500 text-xs sm:text-sm lg:text-base opacity-[39%] italic mt-[2px]">
+              <p className="font-avenir text-gray-500 
+                     text-[10px] sm:text-xs md:text-sm lg:text-base 
+                     opacity-40 italic mt-[2px]">
                 Founding partner, VibeXio
               </p>
             </div>
           </div>
         </div>
+
 
         {/* Section: Intro */}
         <div className="relative max-w-full lg:max-w-[704px] mx-auto px-4 sm:px-6 font-avenir">
@@ -188,7 +198,7 @@ const strategy = () => {
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-2 w-5 lg:w-7 h-3 lg:h-4"
             />
-            <h1 className="font-kollektif font-bold text-lg sm:text-xl lg:text-2xl text-gray-900 leading-[1.74]">
+            <h1 className="font-kollektif font-bold text-lg sm:text-xl lg:text-2xl text-gray-900 leading-[1.74] opacity-70">
               Introduction
             </h1>
           </div>
@@ -248,38 +258,40 @@ const strategy = () => {
         {/* The Shift: Superintelligence Section */}
         <div className="relative max-w-full lg:max-w-[800px] mx-auto px-4 sm:px-6 lg:px-6 font-avenir">
           <WhatsChangingCard topPosition="lg:top-[100px]" />
-          <div className="relative mb-6 pl-8 lg:pl-0">
-            <img
-              src={bulletin}
-              alt="Bulletin"
-              className="absolute left-0 lg:-left-[40px] top-2 w-5 lg:w-7 h-3 lg:h-4"
-            />
-            <h1 className="font-kollektif text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 opacity-70 leading-[1.74] relative">
-              Superintelligence
-            </h1>
-          </div>
-          <div className="font-avenir text-xs sm:text-sm lg:text-base font-normal text-gray-800 leading-[1.74] space-y-6 text-justify">
-            <p>
-              Let's clear something up. We're not claiming to build superintelligent
-              machines. That level of AI—systems that outperform the best human minds
-              across all fields—is still theoretical.
-            </p>
-            <p>But here's what matters. The trajectory is undeniable.</p>
-            <p>
-              AI systems today are already moving beyond task execution into
-              decision-making, goal-setting, and contextual learning. From language
-              models that write code to autonomous agents managing operations—the seeds
-              of superintelligence are being planted.
-            </p>
-            <p>
-              At VibeXio.ai, we help businesses prepare—not by building AGI—but by
-              ensuring they have the strategic infrastructure to navigate a world
-              shaped by increasingly autonomous intelligence.
-            </p>
-            <p>
-              You don't need a quantum lab to start thinking clearly about the future.
-              You just need a partner who understands where it's heading.
-            </p>
+          <div className="xl:px-8">
+            <div className="relative mb-6 pl-8 lg:pl-0">
+              <img
+                src={bulletin}
+                alt="Bulletin"
+                className="absolute left-0 lg:-left-[40px] top-2 w-5 lg:w-7 h-3 lg:h-4"
+              />
+              <h1 className="font-kollektif text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 opacity-70 leading-[1.74] relative">
+                Superintelligence
+              </h1>
+            </div>
+            <div className="font-avenir text-xs sm:text-sm lg:text-base font-normal text-gray-800 leading-[1.74] space-y-6 text-justify">
+              <p>
+                Let's clear something up. We're not claiming to build superintelligent
+                machines. That level of AI—systems that outperform the best human minds
+                across all fields—is still theoretical.
+              </p>
+              <p>But here's what matters. The trajectory is undeniable.</p>
+              <p>
+                AI systems today are already moving beyond task execution into
+                decision-making, goal-setting, and contextual learning. From language
+                models that write code to autonomous agents managing operations—the seeds
+                of superintelligence are being planted.
+              </p>
+              <p>
+                At VibeXio.ai, we help businesses prepare—not by building AGI—but by
+                ensuring they have the strategic infrastructure to navigate a world
+                shaped by increasingly autonomous intelligence.
+              </p>
+              <p>
+                You don't need a quantum lab to start thinking clearly about the future.
+                You just need a partner who understands where it's heading.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -429,10 +441,10 @@ const strategy = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8 pb-20 lg:px-40">
+      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8  pb-10 lg:pb-20 lg:px-30 xl:px-40">
         {/* Recommended Articles */}
         <div className="space-y-4 lg:mt-[80px] w-full lg:w-[260px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center">
+          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center opacity-70">
             Recommended Articles
           </h3>
           <div className="h-[60px] lg:h-[65px] bg-[#EDECE9] rounded-[16px] w-full border border-[#D3D1CB] shadow-[0_2px_8px_rgba(0,0,0,0.06)]" />
@@ -441,8 +453,8 @@ const strategy = () => {
         </div>
 
         {/* Comment Box */}
-        <div className="flex-1 lg:mt-[120px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
+        <div className="flex-1 lg:mt-[148px]">
+          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start opacity-70">
             Share your thoughts below!
           </h3>
           <p className="text-xs text-gray-500 italic mb-2">

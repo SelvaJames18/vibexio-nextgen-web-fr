@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 
 const MarketingBlog = () => {
-const [comment, setComment] = useState("");
+  const [comment, setComment] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
@@ -82,19 +82,38 @@ const [comment, setComment] = useState("");
 
       {/* Content Container */}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 py-8 lg:py-12 space-y-8 lg:space-y-10 lg:ml-[42%]">
-        {/* Author Section */}
-        <div className="flex justify-end px-2 lg:px-0">
-          <div className="flex items-start gap-3 max-w-[300px] lg:mr-[20px]">
-            <div className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#A9978580] overflow-hidden border border-gray-200 flex items-center justify-center">
+          {/* Author Section */}
+        <div className="flex justify-end px-4 md:px-6 lg:px-8">
+          <div className="flex items-start gap-3 max-w-[280px] sm:max-w-[300px] md:max-w-[340px] lg:mr-[20px]">
+
+            {/* Profile Image */}
+            <div
+              className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px] 
+                 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
+              style={{
+                background: "rgba(169, 151, 133, 0.5)",
+                boxShadow: "inset 0px 3px 4px rgba(0, 0, 0, 0.25)",
+              }}
+            >
               <img
                 src={dp}
                 alt="Balakrishnan K N"
-                className="w-[24px] h-[24px] lg:w-[27px] lg:h-[27px] object-cover"
+                className="w-[28px] h-[28px] sm:w-[30px] sm:h-[30px] md:w-[34px] md:h-[34px] object-cover opacity-30"
               />
             </div>
-            <div className="flex flex-col text-left">
-              <p className="font-normal text-gray-800 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] opacity-[70%] leading-tight">Balakrishnan K N</p>
-              <p className="text-gray-500 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[174%] opacity-[39%] italic mt-[2px]">Founding partner, VibeXio</p>
+
+            {/* Name + Role */}
+            <div className="flex flex-col sm:text-left">
+              <p className="font-avenir font-normal text-gray-800 
+                     text-xs sm:text-sm md:text-base lg:text-lg 
+                     opacity-70 leading-tight">
+                Balakrishnan K N
+              </p>
+              <p className="font-avenir text-gray-500 
+                     text-[10px] sm:text-xs md:text-sm lg:text-base 
+                     opacity-40 italic mt-[2px]">
+                Founding partner, VibeXio
+              </p>
             </div>
           </div>
         </div>
@@ -107,7 +126,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h1 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h1 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               Introduction: The New Marketing Paradigm
             </h1>
           </div>
@@ -129,11 +148,11 @@ const [comment, setComment] = useState("");
               className="absolute top-[-18px] sm:top-[-22px] lg:top-[-40px] right-1 sm:right-2 w-[35px] sm:w-[45px] lg:w-[70px] h-[35px] sm:h-[45px] lg:h-[70px] opacity-30 pointer-events-none select-none"
             />
 
-            <h3 className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-lg font-semibold text-gray-800 mb-2 sm:mb-3 lg:mb-2 mt-3 sm:mt-4 lg:mt-0">
+            <h3 className="opacity-70 text-[12px] sm:text-[14px] md:text-[16px] lg:text-lg font-semibold text-gray-800 mb-2 sm:mb-3 lg:mb-2 mt-3 sm:mt-4 lg:mt-0">
               Did you know?
             </h3>
 
-            <p className="text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px] font-bold text-gray-800 mb-2 sm:mb-3 lg:mb-4">
+            <p className="opacity-70 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px] font-bold text-gray-800 mb-2 sm:mb-3 lg:mb-4">
               The Classroom is No Longer a Room
             </p>
 
@@ -154,7 +173,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="opacity-70 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
               The Brand and the Bottleneck
             </h2>
           </div>
@@ -174,7 +193,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="opacity-70 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
               The Shift: Integrating Agentic AI
             </h2>
           </div>
@@ -226,7 +245,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="opacity-70 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
               The Results: From Static to Strategic
             </h2>
           </div>
@@ -255,7 +274,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="opacity-70 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
               Key Insight: AI That Thinks, Not Just Acts
             </h2>
           </div>
@@ -277,7 +296,7 @@ const [comment, setComment] = useState("");
               className="absolute top-[-25px] sm:top-[-30px] lg:top-[-45px] right-2 w-[35px] sm:w-[45px] lg:w-[70px] h-[35px] sm:h-[45px] lg:h-[70px] opacity-30 pointer-events-none select-none"
             />
 
-            <h3 className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-lg font-semibold text-gray-800 mb-2 sm:mb-3 lg:mb-2 mt-4 sm:mt-5 lg:mt-0">
+            <h3 className="opacity-70 text-[12px] sm:text-[14px] md:text-[16px] lg:text-lg font-semibold text-gray-800 mb-2 sm:mb-3 lg:mb-2 mt-4 sm:mt-5 lg:mt-0">
               Important Fact
             </h3>
 
@@ -296,7 +315,7 @@ const [comment, setComment] = useState("");
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[18px] sm:w-[20px] lg:w-[28px] h-[10px] sm:h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="opacity-70 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-bold text-gray-900">
               Conclusion: Co-Creation is the Future
             </h2>
           </div>
@@ -310,10 +329,10 @@ const [comment, setComment] = useState("");
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8 pb-20 lg:px-40">
+      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8  pb-10 lg:pb-20 lg:px-30 xl:px-40">
         {/* Recommended Articles */}
         <div className="space-y-4 lg:mt-[80px] w-full lg:w-[260px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center">
+          <h3 className="opacity-70 font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center">
             Recommended Articles
           </h3>
           <div className="h-[60px] lg:h-[65px] bg-[#EDECE9] rounded-[16px] w-full border border-[#D3D1CB] shadow-[0_2px_8px_rgba(0,0,0,0.06)]" />
@@ -322,8 +341,8 @@ const [comment, setComment] = useState("");
         </div>
 
         {/* Comment Box */}
-        <div className="flex-1 lg:mt-[120px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
+        <div className="flex-1 lg:mt-[148px]">
+          <h3 className="opacity-70 font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
             Share your thoughts below!
           </h3>
           <p className="text-xs text-gray-500 italic mb-2">
@@ -358,7 +377,7 @@ const [comment, setComment] = useState("");
                 userSelect: "none",
               }}
             >
-              {250 - comment.length} characters left <span> {error && <p className="text-red-500 text-sm">{error}</p>}</span>
+              {250 - comment.length} characters left  <span> {error && <p className="text-red-500 text-sm">{error}</p>}</span>
             </div>
 
             {comment.trim() !== "" && (

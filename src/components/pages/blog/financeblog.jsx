@@ -87,32 +87,51 @@ const FinanceBlog = () => {
       </div>
       {/* Content Container */}
       <div className="max-w-3xl mx-auto px-6 py-8 lg:py-12 space-y-8 lg:space-y-10 lg:ml-[40%]">
-        {/* Author Section */}
-        <div className="flex justify-end">
-          <div className="flex items-start gap-3 max-w-[300px]">
-            <div className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#A9978580] overflow-hidden border border-gray-200 flex items-center justify-center">
-              <img
-                src={dp}
-                alt="Balakrishnan K N"
-                className="w-[24px] h-[24px] lg:w-[27px] lg:h-[27px] object-cover"
-              />
-            </div>
-            <div className="flex flex-col text-left">
-              <p className="font-normal text-gray-800 text-[18px] lg:text-[20px] opacity-[70%] leading-tight">Balakrishnan K N</p>
-              <p className="text-gray-500 text-[14px] lg:text-[16px] leading-[174%] opacity-[39%] italic mt-[2px]">Founding partner, VibeXio</p>
-            </div>
-          </div>
-        </div>
+         {/* Author Section */}
+               <div className="flex justify-end px-4 md:px-6 lg:px-8">
+                 <div className="flex items-start gap-3 max-w-[280px] sm:max-w-[300px] md:max-w-[340px] lg:mr-[20px]">
+       
+                   {/* Profile Image */}
+                   <div
+                     className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px] 
+                        rounded-full overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink-0"
+                     style={{
+                       background: "rgba(169, 151, 133, 0.5)",
+                       boxShadow: "inset 0px 3px 4px rgba(0, 0, 0, 0.25)",
+                     }}
+                   >
+                     <img
+                       src={dp}
+                       alt="Balakrishnan K N"
+                       className="w-[28px] h-[28px] sm:w-[30px] sm:h-[30px] md:w-[34px] md:h-[34px] object-cover opacity-30"
+                     />
+                   </div>
+       
+                   {/* Name + Role */}
+                   <div className="flex flex-col sm:text-left">
+                     <p className="font-avenir font-normal text-gray-800 
+                            text-xs sm:text-sm md:text-base lg:text-lg 
+                            opacity-70 leading-tight">
+                       Balakrishnan K N
+                     </p>
+                     <p className="font-avenir text-gray-500 
+                            text-[10px] sm:text-xs md:text-sm lg:text-base 
+                            opacity-40 italic mt-[2px]">
+                       Founding partner, VibeXio
+                     </p>
+                   </div>
+                 </div>
+               </div>
 
         {/* Section: Intro */}
-        <div className="relative max-w-[800px] mx-auto px-6 font-sans">
+        <div className="relative max-w-[800px] mx-auto lg:px-6 font-sans">
           <div className="relative mb-6 pl-8 lg:pl-0">
             <img
               src={bulletin}
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[20px] lg:w-[28px] h-[12px] lg:h-[15px]"
             />
-            <h1 className="text-[20px] lg:text-[24px] font-bold text-gray-900">
+            <h1 className="text-[20px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               Introduction: Finance Isn't What It Used to Be
             </h1>
           </div>
@@ -138,7 +157,7 @@ const FinanceBlog = () => {
         </div>
 
         {/* Section: Transactions to Transformation */}
-        <div className="relative max-w-[800px] mx-auto px-6 font-sans">
+        <div className="relative max-w-[800px] mx-auto lg:px-6 font-sans">
           {/* DID YOU KNOW box - shown on all screens but positioned differently */}
           <div className="lg:absolute relative lg:-left-[280px] lg:top-[300px] w-full lg:w-[245px] mb-6 lg:mb-0 lg:h-[199px] bg-[#ccc6bd5d] rounded-[20px] px-6 py-8 text-center shadow-md">
             <img
@@ -146,7 +165,7 @@ const FinanceBlog = () => {
               alt="Question Mark"
               className="absolute top-[-40px] right-2 w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] opacity-30 pointer-events-none select-none"
             />
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Did you know?</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2 opacity-70">Did you know?</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               AI in finance is forecasted to grow to $64 billion globally by 2030, at a CAGR of 23.5%.
             </p>
@@ -158,7 +177,7 @@ const FinanceBlog = () => {
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[20px] lg:w-[28px] h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               From Transactions to Transformation: Real Business Shifts
             </h2>
           </div>
@@ -218,14 +237,14 @@ const FinanceBlog = () => {
 
       <div className="max-w-3xl mx-auto px-6 py-8 lg:py-12 space-y-8 lg:space-y-10 lg:ml-[40%]">
         {/* AI in backend */}
-        <div className="relative max-w-[800px] mx-auto px-6 font-sans">
+        <div className="relative max-w-[800px] mx-auto lg:px-6 font-sans">
           <div className="relative mb-6 pl-8 lg:pl-0">
             <img
               src={bulletin}
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[20px] lg:w-[28px] h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               The AI Effect in the Financial Back-End
             </h2>
           </div>
@@ -241,14 +260,14 @@ const FinanceBlog = () => {
         </div>
 
         {/* Human-Centered Intelligence */}
-        <div className="relative max-w-[800px] mx-auto px-6 font-sans">
+        <div className="relative max-w-[800px] mx-auto lg:px-6 font-sans">
           <div className="relative mb-6 pl-8 lg:pl-0">
             <img
               src={bulletin}
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[20px] lg:w-[28px] h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               A More Human-Centered Intelligence
             </h2>
           </div>
@@ -264,7 +283,7 @@ const FinanceBlog = () => {
         </div>
 
         {/* Section: Conclusion */}
-        <div className="relative max-w-[800px] mx-auto px-6 font-sans">
+        <div className="relative max-w-[800px] mx-auto lg:px-6 font-sans">
           {/* IMPORTANT FACT box - shown on all screens but positioned differently */}
           <div className="lg:absolute relative lg:-left-[280px] lg:top-[20px] w-full lg:w-[245px] mb-6 lg:mb-0 lg:h-[199px] bg-[#ccc6bd5d] rounded-[20px] px-6 py-8 text-center shadow-md">
             <img
@@ -272,7 +291,7 @@ const FinanceBlog = () => {
               alt="Tick Mark"
               className="absolute top-[-40px] right-2 w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] opacity-30 pointer-events-none select-none"
             />
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Important Fact</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2 opacity-70">Important Fact</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               The Reserve Bank of India (RBI) is actively testing AI-driven credit models for NBFC oversight and financial inclusion
             </p>
@@ -284,7 +303,7 @@ const FinanceBlog = () => {
               alt="Bulletin"
               className="absolute left-0 lg:-left-[40px] top-3 w-[20px] lg:w-[28px] h-[12px] lg:h-[15px]"
             />
-            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900">
+            <h2 className="text-[20px] lg:text-[24px] font-bold text-gray-900 opacity-70">
               Conclusion: Intelligence Is Now a Financial Asset
             </h2>
           </div>
@@ -303,10 +322,10 @@ const FinanceBlog = () => {
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8 pb-20 lg:px-40">
+      <div className="mt-3 md:mt-8 flex flex-col lg:flex-row gap-6 lg:gap-[30px] px-8  pb-10 lg:pb-20 lg:px-30 xl:px-40">
         {/* Recommended Articles */}
         <div className="space-y-4 lg:mt-[80px] w-full lg:w-[260px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg  font-semibold text-gray-800 leading-[1.74] text-center">
+          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg opacity-70 font-semibold text-gray-800 leading-[1.74] text-center">
             Recommended Articles
           </h3>
           <div className="h-[60px] lg:h-[65px] bg-[#EDECE9] rounded-[16px] w-full border border-[#D3D1CB] shadow-[0_2px_8px_rgba(0,0,0,0.06)]" />
@@ -315,8 +334,8 @@ const FinanceBlog = () => {
         </div>
 
         {/* Comment Box */}
-        <div className="flex-1 lg:mt-[120px]">
-          <h3 className="font-kollektif text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
+        <div className="flex-1 lg:mt-[148px]">
+          <h3 className="font-kollektif text-sm sm:text-base opacity-70 lg:text-lg font-semibold text-gray-800 mb-2 text-center xl:text-start">
             Share your thoughts below!
           </h3>
           <p className="text-xs text-gray-500 italic mb-2">
@@ -351,7 +370,7 @@ const FinanceBlog = () => {
                 userSelect: "none",
               }}
             >
-              {250 - comment.length} characters left <span> {error && <p className="text-red-500 text-sm">{error}</p>}</span>
+              {250 - comment.length} characters left  <span> {error && <p className="text-red-500 text-sm">{error}</p>}</span>
             </div>
 
             {comment.trim() !== "" && (

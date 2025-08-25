@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Expand } from "../../../components/Expand.jsx";
+import { ArrowRight } from "lucide-react";
 import image0 from "../../../assets/blog/aistonks.png";
 import image1 from "../../../assets/blog/aibrain.png";
 import image2 from "../../../assets/blog/brainset.png";
@@ -107,162 +108,169 @@ const ListPage = () => {
         <main className="flex-1">
           {/* Recents */}
           <section className="mb-[48px]">
-            <h2 className="text-[36px] font-bold mb-[16px]">Recents</h2>
+            <h2 className="text-[36px] font-bold mb-[16px] text-[rgba(18,18,18,0.83)]">Recents</h2>
 
-            <Link to="/wealthai" className="flex flex-row max-[1360px]:flex-col gap-6 relative">
-              <div className="bg-[#121212] w-[500px] h-[258px] rounded-[25px] flex justify-center items-center relative max-[1360px]:w-full">
-                <div className="absolute inset-0 bg-white rounded-full blur-[64px] opacity-20 z-0" />
-                <img className="mt-[76px] w-[250px] relative z-10" src={image0} alt="" />
-              </div>
+           <Link
+  to="/wealthai"
+  className="flex flex-row max-[1360px]:flex-col gap-6 relative group w-full"
+>
+  {/* Left Image Section */}
+  <div className="bg-[#121212] w-full max-w-[500px] h-[258px] rounded-[25px] flex justify-center items-center relative">
+    <div className="absolute inset-0 bg-white rounded-full blur-[64px] opacity-20 z-0" />
+    <img
+      className="mt-[76px] w-[250px] max-w-full h-auto relative z-10"
+      src={image0}
+      alt=""
+    />
+  </div>
 
-              <div className="flex gap-4 mt-[90px] max-[1360px]:mt-6 items-start">
-                <div className="w-[7px] h-[160px] bg-[#D6CFC4] rounded-full" />
-                <div className="group transition-all duration-300 cursor-pointer">
-                  <h3 className="text-[20px] md:text-[22px] lg:text-[24px] font-bold text-[#969593] leading-[165%] tracking-tight text-left transition-colors duration-300 group-hover:text-[#5B7C99]">
-                    The Evolving Future of<br />
-                    Finance: A Case Study on the<br />
-                    <span className="flex items-center gap-2">
-                      Intelligence Revolution
-                      <span className="hover:scale-125 transition-transform duration-300">
-                        <Expand stroke="#5B7C99" />
-                      </span>
-                    </span>
-                  </h3>
-                  <p className="text-[13px] md:text-[14px] text-[#6E6E6E] italic mt-2">
-                    July 28, 2025
-                  </p>
-                </div>
+  {/* Right Text Section */}
+  <div className="flex gap-[24px] mt-[90px] w-full max-[1360px]:mt-0 ">
+    <div className="w-[5px] md:w-[7px] h-[120px] md:h-[160px] bg-[#D6CFC4] rounded-full shrink-0" />
+    <div>
+      <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold text-[rgba(18,18,18,0.48)] leading-[165%] tracking-tight text-left transition-colors duration-300">
+        The Evolving Future of <br />
+        Finance: A Case Study on the <br />
+        Intelligence Revolution
+        <span className="text-[#5b7c99] duration-300 ease-in-out text-[16px] sm:text-[18px] inline-flex items-center ml-2">
+          Read More
+          <ArrowRight
+            size={16}
+            className="ml-0.5 opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+          />
+        </span>
+      </h3>
 
-              </div>
-            </Link>
+      <p className="text-[12px] sm:text-[13px] md:text-[14px] text-[#6E6E6E] italic mt-2">
+        July 28, 2025
+      </p>
+    </div>
+  </div>
+</Link>
+
           </section>
 
           {/* Our Blogs */}
-          <section>
-            <h2 className="text-[36px] text-[#121212] font-bold mb-[16px]">Our Blogs</h2>
+          <h2 className="text-[28px] md:text-[36px] text-[rgba(18,18,18,0.83)] font-bold mb-[16px]">
+            Our Blogs
+          </h2>
 
-            <div className="flex flex-col md:flex-row md:flex-wrap gap-[24px]">
-              {/* Blog 1 */}
-              <Link to="/thinkai" className="group block w-full lg:w-[200px]">
-                <div className="flex flex-col gap-[12px] mb-[50px] cursor-pointer">
-                  <div className="relative w-[200px] h-[176px] rounded-[16px] overflow-hidden flex items-center justify-center">
-                    {/* Same BG as image0 */}
-                    <div className="absolute inset-0 bg-white rounded-full blur-[64px] opacity-20 z-0" />
-                    <div className="absolute inset-0 bg-black opacity-80 blur-[1px] z-0 transition-colors duration-300" />
-                    <img
-                      src={image1}
-                      alt="Blog 1"
-                      className="relative z-10 w-[125px] h-[183px] rotate-[-7.03deg] mt-[70px] group-hover:grayscale transition duration-300"
-                    />
-                  </div>
-
-                  <div className="flex gap-[8px] items-start min-h-[64px]">
-                    <div className="w-[2px] bg-[#C9C1B7] rounded-sm mt-[2px] self-stretch h-[75px]" />
-                    <div className="text-[#969593] text-[16px] font-medium leading-[165%] group-hover:text-[#5B7C99] transition-colors duration-300 flex flex-wrap items-center gap-1">
-                      <span>Why Every Business</span>
-                      <span>Needs an AI Strategy</span>
-                      <span>in 2025</span>
-                      <span className="hover:scale-125 transition-transform duration-300">
-                        <Expand stroke="#5B7C99" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Blog 2 */}
-              <Link to="/learnai" className="group block">
-                <div className="flex flex-col gap-[12px] mb-[50px] cursor-pointer">
-                  <div className="relative w-[290px] h-[172px] rounded-[16px] overflow-hidden flex items-center justify-center">
-                    {/* White glow bg like image0 */}
-                    <div className="absolute inset-0 bg-white rounded-full blur-[64px] opacity-20 z-0" />
-                    {/* Black overlay */}
-                    <div className="absolute inset-0 bg-black opacity-80 blur-[1px] z-0" />
-
-                    <div className="relative z-10 w-[96px] h-[96px] rounded-[16px] flex items-center justify-center shadow-white/10">
-                      <img src={image3} alt="Blog 2" className="w-[200px] h-[176px] object-contain" />
-                    </div>
-                  </div>
-
-
-                  <div className="flex gap-[8px] items-start">
-                    <div className="w-[2px] bg-[#C9C1B7] rounded-sm mt-[2px] self-stretch h-[75px]" />
-                    <div className="text-[#969593] text-[16px] font-medium leading-[165%] max-w-[270px] transition-colors duration-300 group-hover:text-[#5B7C99]">
-                      <p>
-                        Re-Architecting the Learning Stack:
-                        <br />
-                        Strategic AI Integration in the Future
-                      </p>
-                      <div className="flex items-center gap-1">
-                        <span>of EdTech</span>
-                        <span className="hover:scale-125 transition-transform duration-300">
-                          <Expand stroke="#5B7C99" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Blog 3 */}
-              <Link to="/marketai" className="block group">
-                <div className="flex flex-col gap-[12px] mb-[50px] cursor-pointer">
-                  <div className="relative w-[290px] h-[172px] rounded-[16px] overflow-hidden flex items-center justify-center">
-                    {/* White glow bg like image0 */}
-                    <div className="absolute inset-0 bg-white rounded-full blur-[64px] opacity-20 z-0" />
-                    {/* Black overlay */}
-                    <div className="absolute inset-0 bg-black opacity-80 blur-[1px] z-0" />
-
-                    <div className="relative z-10 w-[200px] h-[176px] rounded-[16px] flex items-center justify-center shadow-white/10">
-                      <img src={image2} alt="Blog 3" className="w-[300px] h-[276px] object-contain" />
-                    </div>
-                  </div>
-                  <div className="flex gap-[8px] items-start">
-                    <div className="w-[3px] bg-[#C9C1B7] rounded-sm mt-[2px] self-stretch h-[55px]" />
-                    <div className="group text-[#969593] text-[16px] font-medium leading-[165%] max-w-[220px] transition-colors duration-300 group-hover:text-[#5B7C99]">
-                      <span className="block">Marketing in the Age</span>
-                      <span className="flex items-center gap-[6px]">
-                        of Agentic AI
-                        <span className="hover:scale-125 transition-transform duration-300">
-                          <Expand stroke="#5B7C99" />
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Blog 4 */}
-              <Link to="/healthai" className="block">
-                <div className="flex flex-col gap-[12px] mb-[50px] cursor-pointer">
-                  <div className="relative w-[290px] h-[172px] rounded-[16px] overflow-hidden flex items-center justify-center">
-                    {/* White glow bg like image0 */}
-                    <div className="absolute inset-0 bg-white rounded-full blur-[74px] opacity-20 z-0" />
-                    {/* Black overlay */}
-                    <div className="absolute inset-0 bg-black opacity-70 blur-[1px] z-0" />
-
-                    <div className="relative z-10 w-[200px] h-[176px] rounded-[16px] flex items-center justify-center shadow-white/10">
-                      <img src={image4} alt="Blog 4" className="w-[300px] h-[276px] object-contain" />
-                    </div>
-                  </div>
-                  <div className="flex gap-[8px] items-start">
-                    <div className="w-[2px] bg-[#C9C1B7] rounded-sm mt-[2px] self-stretch h-[55px]" />
-                    <div className="group transition-all duration-300 cursor-pointer">
-                      <p className="text-[#969593] text-[16px] font-medium leading-[165%] max-w-[250px] transition-colors duration-300 group-hover:text-[#5B7C99]">
-                        Rethinking Healthcare in the Age <br />
-                        <span className="flex items-center gap-2">
-                          Intelligence
-                          <span className="hover:scale-125 transition-transform duration-300">
-                            <Expand stroke="#5B7C99" />
-                          </span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+          <Link to="/wealthai" className="flex flex-col relative w-full sm:w-fit group">
+            <div className="bg-[#121212] w-full max-w-[187px] h-[176px] sm:w-[187px] rounded-[25px] flex justify-center items-center relative">
+              <div className="absolute inset-0 bg-white rounded-full blur-[44px] opacity-20 z-0" />
+              <img
+                className="mt-[66px] max-w-[138px] w-full relative z-10 rotate-5"
+                src={image1}
+                alt=""
+              />
             </div>
-          </section>
+
+            <div className="flex gap-[16px] items-start mt-[24px]">
+              <div className="w-[2px] h-[66px] bg-[#D6CFC4] rounded-full" />
+              <div className="transition-all duration-300 cursor-pointer">
+                <p className="font-[Avenir LT Std] font-semibold text-[14px] sm:text-[16px] leading-[165%] tracking-[0] text-[rgba(18,18,18,0.48)]">
+                  Why Every Business <br />
+                  Needs an AI Strategy <br />
+                  in 2025
+                  <span className="relative inline-flex ml-2 items-center text-[#5b7c99] group-hover:text-[#5b7c99] duration-300 ease-in-out">
+                    Read More
+                    <ArrowRight
+                      size={16}
+                      className="ml-0.5 opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                    />
+                  </span>
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Blog Grid */}
+          <div className="mt-[44px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[22px]">
+            {/* Blog Card 1 */}
+            <Link to="/learnai" className="flex flex-col relative w-full group">
+              <div className="bg-[#121212] w-full h-[172px] rounded-[25px] flex justify-center items-center relative">
+                <div className="absolute inset-0 bg-white rounded-full blur-[44px] opacity-20 z-0" />
+                <img
+                  className="mt-[30px] max-w-[108px] w-full relative z-10 rotate-5"
+                  src={image3}
+                  alt=""
+                />
+              </div>
+
+              <div className="flex gap-[16px] items-start mt-[24px]">
+                <div className="w-[2px] h-[66px] bg-[#D6CFC4] rounded-full" />
+                <div className="transition-all duration-300 cursor-pointer">
+                  <p className="font-[Avenir LT Std] font-semibold text-[14px] sm:text-[16px] leading-[165%] tracking-[0] text-[rgba(18,18,18,0.48)]">
+                    Re-Architecting the Learning Stack: Strategic AI Integration in the Future of EdTech
+                    <span className="relative inline-flex ml-2 items-center text-[#5b7c99] group-hover:text-[#5b7c99] duration-300 ease-in-out">
+                      Read More
+                      <ArrowRight
+                        size={16}
+                        className="ml-0.5 opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                      />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Blog Card 2 */}
+            <Link to="/marketai" className="flex flex-col relative w-full group">
+              <div className="bg-[#121212] w-full h-[172px] rounded-[25px] flex justify-center items-center relative">
+                <div className="absolute inset-0 bg-white rounded-full blur-[44px] opacity-20 z-0" />
+                <img
+                  className="mt-[12px] max-w-[224px] w-full relative z-10 rotate-5"
+                  src={image2}
+                  alt=""
+                />
+              </div>
+
+              <div className="flex gap-[16px] items-start mt-[24px]">
+                <div className="w-[2px] h-[54px] bg-[#D6CFC4] rounded-full" />
+                <div className="transition-all duration-300 cursor-pointer">
+                  <p className="font-[Avenir LT Std] font-semibold text-[14px] sm:text-[16px] leading-[165%] tracking-[0] text-[rgba(18,18,18,0.48)]">
+                    Marketing in the Age of Agentic AI
+                    <span className="relative inline-flex ml-2 items-center text-[#5b7c99] group-hover:text-[#5b7c99] duration-300 ease-in-out">
+                      Read More
+                      <ArrowRight
+                        size={16}
+                        className="ml-0.5 opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                      />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Blog Card 3 */}
+            <Link to="/healthai" className="flex flex-col relative w-full group">
+              <div className="bg-[#121212] w-full h-[172px] rounded-[25px] flex justify-center items-center relative">
+                <div className="absolute inset-0 bg-white rounded-full blur-[44px] opacity-20 z-0" />
+                <img
+                  className="p-[10px] max-w-[225px] w-full relative z-10 rotate-5 opacity-[83%]"
+                  src={image4}
+                  alt=""
+                />
+              </div>
+
+              <div className="flex gap-[16px] items-start mt-[24px]">
+                <div className="w-[2px] h-[54px] bg-[#D6CFC4] rounded-full" />
+                <div className="transition-all duration-300 cursor-pointer">
+                  <p className="font-[Avenir LT Std] font-semibold text-[14px] sm:text-[16px] leading-[165%] tracking-[0] text-[rgba(18,18,18,0.48)]">
+                    Rethinking Healthcare in the Age of Intelligence
+                    <span className="relative inline-flex ml-2 items-center text-[#5b7c99] group-hover:text-[#5b7c99] duration-300 ease-in-out">
+                      Read More
+                      <ArrowRight
+                        size={16}
+                        className="ml-0.5 opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                      />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+
         </main>
       </div>
     </div>
