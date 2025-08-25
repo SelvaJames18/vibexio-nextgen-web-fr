@@ -96,7 +96,7 @@ const StrategicEdgeSection = () => {
           viewport={{ amount: 0.2 }}
         >
           Choosing the right partner for AI and digital transformation is
-          critical—and that's where we deliver unmatched value.
+          critical and that's where we deliver unmatched value.
         </motion.p>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-[60px]">
@@ -105,7 +105,7 @@ const StrategicEdgeSection = () => {
             icon={targetIcon}
             alt="Strategic By Design"
             title="Strategic By Design"
-            text="We combine deep technical expertise with forward-thinking strategy to align every solution with your core business objectives. From roadmap to rollout, we're not just building tools—we're architecting long-term outcomes."
+            text="We combine deep technical expertise with forward-thinking strategy to align every solution with your core business objectives. From roadmap to rollout, we're not just building tools we're architecting long-term outcomes."
             animation={slideInFromLeft}
           />
           <StrategicItem
@@ -113,7 +113,7 @@ const StrategicEdgeSection = () => {
             icon={puzzleIcon}
             alt="Tailored, Not Templated"
             title="Tailored, Not Templated"
-            text="No two businesses are the same. That's why every AI model, system integration, or digital strategy we deliver is built from the ground up—custom-fit to your operations, challenges, and ambitions."
+            text="No two businesses are the same. That's why every AI model, system integration, or digital strategy we deliver is built from the ground up custom-fit to your operations, challenges, and ambitions."
             animation={slideInFromRight}
           />
         </div>

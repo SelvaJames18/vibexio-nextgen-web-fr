@@ -151,7 +151,7 @@ function Footer() {
                   to="/case-study"
                   className="font-semibold text-base text-[#9c9c9c] hover:text-white transition-colors duration-300"
                 >
-                  CASE STUDY
+                  CASE STUDIES
                 </Link>
               </li>
               <li>

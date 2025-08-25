@@ -153,7 +153,7 @@ export default function CardGrid() {
 
   return (
     <div className="bg-white w-full">
-      <div className="flex flex-col lg:flex-row gap-5 lg:gap-[220px] p-[20px] sm:p-[40px] md:p-[60px] lg:p-[80px] xl:p-[100px] w-full max-w-[1400px] mx-auto">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-[220px] p-[10px] md:p-[60px] lg:p-[80px] xl:p-[100px] w-full max-w-[1400px] mx-auto">
         {/* Main cards container */}
         <div className="flex flex-col items-center md:block w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[20px] w-full relative">
@@ -199,7 +199,8 @@ export default function CardGrid() {
                   >
                     {/* Front of Card */}
                       <motion.div
-                        className="card-front absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-gradient-to-br from-[#D6BF7C] to-[#EDECE9] border border-[#EDECE9] flex flex-col justify-between p-[20px] md:p-[30px] box-border"
+                        className="card-front absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-gradient-to-br 
+                        from-[#D6BF7C] to-[#EDECE9] border border-[#EDECE9] flex flex-col justify-between p-[20px] md:p-[30px] box-border"
                         style={{
                           backfaceVisibility: 'hidden',
                           transformStyle: 'preserve-3d',
@@ -227,7 +228,7 @@ export default function CardGrid() {
 
                     {/* Back of Card */}
                     <motion.div
-                      className="card-back absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-[#EDECE9] border border-[#EDECE9] shadow-md flex justify-center items-center p-[20px] md:p-[30px] box-border overflow-y-auto"
+                      className="card-back absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-[#EDECE9] border border-[#EDECE9] shadow-md flex justify-center items-center p-[10px] md:p-[30px] box-border overflow-y-auto"
                       variants={backContentVariants}
                       style={{
                         backfaceVisibility: 'hidden',

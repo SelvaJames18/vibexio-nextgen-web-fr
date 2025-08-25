@@ -72,7 +72,7 @@ const FeaturesSection = () => {
                 End-to-End Expertise
               </h3>
               <p className="text-[15px] lg:text-[18px] leading-[1.6] font-normal text-[#333] text-center lg:text-left">
-                From ideation to deployment—and beyond—we offer full-spectrum support across AI development,
+                From ideation to deployment and beyond we offer full-spectrum support across AI development,
                 automation, data strategy, and digital consulting.
               </p>
             </div>
@@ -152,7 +152,7 @@ const FeaturesSection = () => {
                   Partnership Mindset
                 </h3>
                 <p className="text-[15px] lg:text-[18px] font-normal leading-[1.6] text-[#333] text-center lg:text-left">
-                  We don't just deliver projects—we build relationships. We operate as a true extension of your team,
+                  We don't just deliver projects we build relationships. We operate as a true extension of your team,
                   with proactive communication, transparency, and long-term alignment at the core of everything we do.
                 </p>
               </div>

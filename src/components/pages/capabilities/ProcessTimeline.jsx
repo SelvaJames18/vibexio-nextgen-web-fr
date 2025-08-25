@@ -231,7 +231,7 @@ const ProcessTimeline = () => {
             className=" absolute w-[50px] h-[50px] lg:hidden left-[90px] top-[380px] md:left-[144px]"
           />
           <motion.div
-            className="bg-black absolute left-[72px] top-[620px] xsm:left-[72px] xsm:top-[460px] smm:left-[72px] smm:top-[460px] sm:left-[73px] sm:top-[400px] md:left-[110px] md:top-[430px] lg:left-[184px] lg:top-[460px] xl:left-[360px] xl:top-[480px] w-[0.4px]"
+            className="bg-black absolute left-[72px] top-[620px] xsm:left-[72px] xsm:top-[460px] smm:left-[72px] smm:top-[460px] sm:left-[73px] sm:top-[400px] md:left-[110px] md:top-[430px] lg:left-[184px] lg:top-[460px] xl:left-[362px] xl:top-[480px] w-[0.4px]"
             initial={{ height: 0, opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{
@@ -302,7 +302,7 @@ const ProcessTimeline = () => {
         </div>
 
         <motion.div
-          className="bg-[#4b6b8f] text-white p-6 lg:p-[40px_32px] max-md:mb-[-5px] max-md:mr-[40px] max-md:w-[300px] max-[425px]:mr-[10px] rounded-[6px] w-full max-w-[360px] mx-auto lg:mx-0 xl:ml-[1008px] mb-10 lg:mb-[-20px] lg:ml-[550px] md:mr-[50px] md:mb-[-10px] mt-10"
+          className="bg-[#4b6b8f] text-white p-6 lg:p-[40px_32px] max-md:mb-[-5px] max-md:mr-[40px] max-md:w-[300px] max-[425px]:mr-[10px] rounded-[6px] w-full max-w-[360px] mx-auto lg:mx-0 xl:ml-[1008px] mb-10 lg:mb-[-20px] lg:ml-[550px] md:mr-[50px] md:mb-[-10px] mt-10 min-[1280px]:max-[1380px]:ml-[800px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}

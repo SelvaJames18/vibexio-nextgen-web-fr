@@ -59,7 +59,7 @@ const AboutUs = () => {
             variants={slideDown}
             transition={{ delay: 0.2 }}
           >
-            We don’t just implement technology—we guide organizations through complex digital landscapes with clarity and purpose. Whether you're navigating legacy system upgrades, building an AI innovation roadmap, or launching a full-scale digital transformation, we offer the strategic insight and technical depth to get you there.          </motion.p>
+            We don’t just implement technology we guide organizations through complex digital landscapes with clarity and purpose. Whether you're navigating legacy system upgrades, building an AI innovation roadmap, or launching a full-scale digital transformation, we offer the strategic insight and technical depth to get you there.          </motion.p>
         </motion.div>
         {/* Our Expertise */}
         <motion.div
@@ -84,14 +84,14 @@ const AboutUs = () => {
             variants={slideLeft}
             custom={0.2}
           >
-            Our expertise spans machine learning, predictive analytics, and intelligent process automation—all deeply integrated with your business model, industry demands, and strategic goals. We design and deploy adaptive, enterprise-ready systems that evolve alongside your needs.          </motion.p>
+            Our expertise spans machine learning, predictive analytics, and intelligent process automation all deeply integrated with your business model, industry demands, and strategic goals. We design and deploy adaptive, enterprise-ready systems that evolve alongside your needs.          </motion.p>
         </motion.div>
 
         {/* Strategic Partner */}
         <motion.div
           className="bg-[#232323] rounded-xl shadow-lg p-6 w-[850px] xl:w-[1050px] h-[171px] relative bottom-[110px] xl:right-[120px]
            max-xl:left-[-100px]
-            max-[1440px]:right-[80px] max-[1280px]:right-0 max-[1024px]:static max-[1024px]:w-full max-[1024px]:h-auto"
+            max-[1440px]:right-[80px] max-[1280px]:right-0 max-[1024px]:static max-[1024px]:w-full max-[1024px]:h-auto z-10"
           variants={slideRight}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -112,7 +112,7 @@ const AboutUs = () => {
             variants={slideRight}
             custom={0.2}
           >
-            Whether your goal is to modernize internal workflows, elevate customer experience, or lead your sector through AI-powered disruption, we’re more than a vendor—we’re your strategic partner in building what’s next.          </motion.p>
+            Whether your goal is to modernize internal workflows, elevate customer experience, or lead your sector through AI-powered disruption, we’re more than a vendor we’re your strategic partner in building what’s next.          </motion.p>
         </motion.div>
       </div>
 

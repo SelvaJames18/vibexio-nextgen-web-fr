@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -56,14 +56,14 @@ const cards = [
 const cardVariants = {
   front: {
     rotateY: 0,
-    transition: { 
+    transition: {
       duration: 0.8,
       ease: [0.4, 0, 0.2, 1]
     }
   },
   back: {
     rotateY: 180,
-    transition: { 
+    transition: {
       duration: 0.8,
       ease: [0.4, 0, 0.2, 1]
     }
@@ -111,7 +111,7 @@ export default function IndustryGrid() {
 
   useEffect(() => {
     let timeoutId = null;
-    
+
     const handleResizeDebounced = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
@@ -136,7 +136,7 @@ export default function IndustryGrid() {
 
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('touchstart', handleClickOutside);
-    
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('touchstart', handleClickOutside);
@@ -157,7 +157,7 @@ export default function IndustryGrid() {
 
   return (
     <div className="bg-white" ref={gridRef}>
-      <div className="font-[Poppins] max-w-[1400px] mx-auto bg-white flex flex-col justify-between px-5 sm:px-10 md:px-[60px] lg:px-[100px] py-10 md:py-[60px] relative h-auto md:h-[900px]">
+      <div className="font-[Poppins] max-w-[1400px] mx-auto bg-white flex flex-col justify-between p-[10px] md:p-[0px] md:px-[60px] lg:px-[100px] py-10 md:py-[60px] relative h-auto md:h-[900px]">
 
         {/* Main grid container */}
         <div className="xl:left-[-15px] max-md:mt-[-40px] flex flex-col lg:grid lg:grid-cols-[minmax(300px,373px)_1fr_1fr] lg:grid-rows-2 gap-5 lg:gap-[14px] mb-10 lg:mb-[10px] relative lg:-left-[30px]">
@@ -180,12 +180,11 @@ export default function IndustryGrid() {
             {cards.slice(0, 4).map((card, idx) => (
               <motion.div
                 key={idx}
-                className={`relative w-full max-w-[373px] h-[250px] sm:w-full lg:w-[373px] lg:h-[300px] perspective-[1200px] cursor-pointer mx-auto ${
-                  idx === 0 ? "xl:ml-[0px]" : 
-                  idx === 1 ? "lg:ml-[120px] xl:ml-[10px]" : 
-                  idx === 2 ? "lg:ml-[0px] xl:-ml-[420px]" : 
-                  idx === 3 ? "lg:ml-[120px] xl:-ml-[410px]" : ""
-                }`}
+                className={`relative w-full max-w-[373px] h-[250px] sm:w-full lg:w-[373px] lg:h-[300px] perspective-[1200px] cursor-pointer mx-auto ${idx === 0 ? "xl:ml-[0px]" :
+                    idx === 1 ? "lg:ml-[120px] xl:ml-[10px]" :
+                      idx === 2 ? "lg:ml-[0px] xl:-ml-[420px]" :
+                        idx === 3 ? "lg:ml-[120px] xl:-ml-[410px]" : ""
+                  }`}
                 whileHover={!isMobile ? "hover" : undefined}
                 variants={hoverVariants}
                 onHoverStart={() => !isMobile && setHoveredIndex(idx)}
@@ -202,8 +201,8 @@ export default function IndustryGrid() {
                   className="relative w-full h-full"
                   initial="front"
                   animate={
-                    isMobile 
-                      ? (flippedIndex === idx ? "back" : "front") 
+                    isMobile
+                      ? (flippedIndex === idx ? "back" : "front")
                       : (hoveredIndex === idx ? "back" : "front")
                   }
                   variants={cardVariants}
@@ -212,27 +211,27 @@ export default function IndustryGrid() {
                   }}
                 >
                   {/* Front Face */}
-                      <motion.div
-                        className="card-front absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-gradient-to-br from-[#D6BF7C] to-[#EDECE9] border border-[#EDECE9] flex flex-col justify-between p-[20px] md:p-[30px] box-border"
-                        style={{
-                          backfaceVisibility: 'hidden',
-                          transformStyle: 'preserve-3d',
-                          boxShadow: '2px 2px 3px rgba(0, 0, 0, 0.25)',
-                        }}
-                        variants={contentVariants}
-                      >
-                      <motion.h3
-                        className="text-[18px] md:text-[24px] lg:text-[28px] font-bold font-[Kollektif] mt-[30px] text-[#333] mb-4 max-w-[90%] pl-2 md:pl-5"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                      >
-                        {card.title}
-                      </motion.h3>
-                    <motion.img 
-                      src={card.icon} 
-                      alt={card.title} 
-                      className="absolute bottom-4 sm:bottom-[16px] right-4 sm:right-[16px] w-14 h-14 sm:w-[70px] sm:h-[70px] opacity-25" 
+                  <motion.div
+                    className="card-front absolute w-full h-full rounded-[25px] md:rounded-[37px] bg-gradient-to-br from-[#D6BF7C] to-[#EDECE9] border border-[#EDECE9] flex flex-col justify-between p-[20px] md:p-[30px] box-border"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      transformStyle: 'preserve-3d',
+                      boxShadow: '2px 2px 3px rgba(0, 0, 0, 0.25)',
+                    }}
+                    variants={contentVariants}
+                  >
+                    <motion.h3
+                      className="text-[18px] md:text-[24px] lg:text-[28px] font-bold font-[Kollektif] mt-[30px] text-[#333] mb-4 max-w-[90%] pl-2 md:pl-5"
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                    >
+                      {card.title}
+                    </motion.h3>
+                    <motion.img
+                      src={card.icon}
+                      alt={card.title}
+                      className="absolute bottom-4 sm:bottom-[16px] right-4 sm:right-[16px] w-14 h-14 sm:w-[70px] sm:h-[70px] opacity-25"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 0.25, scale: 1 }}
                       transition={{ duration: 0.6, delay: 0.4 }}
@@ -241,7 +240,7 @@ export default function IndustryGrid() {
 
                   {/* Back Face */}
                   <motion.div
-                    className="absolute w-full h-full rounded-[37px] bg-[#EDECE9] border border-[#ccc] p-4 sm:p-6 flex justify-center items-center shadow-md overflow-y-auto"
+                    className="absolute w-full h-full rounded-[37px] bg-[#EDECE9] border border-[#ccc] p-3 sm:p-6 flex justify-center items-center shadow-md overflow-y-auto"
                     variants={backContentVariants}
                     style={{
                       backfaceVisibility: 'hidden',
@@ -250,7 +249,7 @@ export default function IndustryGrid() {
                     }}
                   >
                     <div className="flex flex-col justify-start items-start text-left w-full h-full">
-                      <motion.h4 
+                      <motion.h4
                         className="text-[12px] md:text-[14px] lg:text-[16px] font-[AvenirLTStd-heavy] text-[#121212] px-[5px] py-[5px] leading-tight"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -258,7 +257,7 @@ export default function IndustryGrid() {
                       >
                         {card.back.title}
                       </motion.h4>
-                      <motion.p 
+                      <motion.p
                         className="text-[12px] md:text-[11px] lg:text-[13px] font-thin font-[AvenirLTStd-light] text-[#121212] px-[5px] py-[5px] leading-[150%]"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -285,17 +284,17 @@ export default function IndustryGrid() {
         </div>
 
         {/* CTA Row */}
-<div className="flex flex-col xl:flex-row justify-between items-center mt-8 gap-6 sm:gap-0 lg:mt-[-600px] ">
-  <p className="font-[Kollektif] font-normal text-[18px] sm:text-[28px]  leading-[100%] text-black w-full text-center sm:text-center sm:w-[70%] lg:w-[893px] m-0">
-    Let's Connect and Redefine What's Possible in Your Industry.
-  </p>
-  <button
-    className="w-[183px] h-[50px] rounded-full px-6 py-3 max-xl:mt-[30px] max-xl:mb-[80px] xl:mr-[150px] text-[14px] font-medium cursor-pointer bg-gradient-to-br from-[#2a2a2a] to-[#242424] text-white shadow-inner relative overflow-hidden transition-transform duration-500 hover:scale-[1.04] hover:text-black before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-[300%] before:h-[300%] before:bg-[radial-gradient(circle,#D6BF7C_0%)] before:-translate-x-1/2 before:-translate-y-1/2 before:scale-0 before:opacity-50 before:rounded-full before:transition-transform before:duration-500 hover:before:scale-100 hover:before:opacity-100"
-    onClick={handleConnectClick}
-  >
-    <span className="relative z-10">Let's connect</span>
-  </button>
-</div>
+        <div className="flex flex-col xl:flex-row justify-between items-center mt-8 gap-6 sm:gap-0 lg:mt-[-600px] ">
+          <p className="font-[Kollektif] font-normal text-[18px] sm:text-[28px]  leading-[100%] text-black w-full text-center sm:text-center sm:w-[70%] lg:w-[893px] m-0">
+            Let's Connect and Redefine What's Possible in Your Industry.
+          </p>
+          <button
+            className="w-[183px] h-[50px] rounded-full px-6 py-3 max-xl:mt-[30px] max-xl:mb-[80px] xl:mr-[150px] text-[14px] font-medium cursor-pointer bg-gradient-to-br from-[#2a2a2a] to-[#242424] text-white shadow-inner relative overflow-hidden transition-transform duration-500 hover:scale-[1.04] hover:text-black before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-[300%] before:h-[300%] before:bg-[radial-gradient(circle,#D6BF7C_0%)] before:-translate-x-1/2 before:-translate-y-1/2 before:scale-0 before:opacity-50 before:rounded-full before:transition-transform before:duration-500 hover:before:scale-100 hover:before:opacity-100"
+            onClick={handleConnectClick}
+          >
+            <span className="relative z-10">Let's connect</span>
+          </button>
+        </div>
 
       </div>
     </div>

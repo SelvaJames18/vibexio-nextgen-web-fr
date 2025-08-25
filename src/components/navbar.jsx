@@ -106,7 +106,7 @@ const Navbar = () => {
             onClick={handleLinkClick}
             className="text-[#A7A7A8] text-[20px] lg:text-[16px] xl:text-[20px] font-normal font-inter hover:text-white  whitespace-nowrap"
           >
-            Case Study
+            Case Studies
           </Link>
           <Link
             to="/blogs"

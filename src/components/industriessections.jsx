@@ -68,7 +68,7 @@ const IndustriesSection = () => {
                     leading-[200.99999999999997%] xl:text-[16px] lg:text-[12px] text-[#edece9] max-w-[95%] mx-auto md:mx-0"
         >
           We partner with ambitious leaders across industries to reimagine what's possible.
-          Every sector has unique challenges—but if the vision is feasible, we engineer the solution.
+          Every sector has unique challenges but if the vision is feasible, we engineer the solution.
           From regulatory-heavy environments to fast-scaling startups, our expertise in digital systems,
           intelligent automation, and enterprise AI creates meaningful, measurable transformation.
         </motion.p>
