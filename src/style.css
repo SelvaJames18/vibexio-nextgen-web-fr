@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('./assets/fonts/Kollektif.ttf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('./assets/fonts/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-heavy';
+  src: url('./assets/fonts/AvenirLTStd-Heavy.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-medium';
+  src: url('./assets/fonts/AvenirLTStd-Medium.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-light';
+  src: url('./assets/fonts/AvenirLTStd-Light.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-book';
+  src: url('./assets/fonts/AvenirLTStd-BookOblique.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-black';
+  src: url('./assets/fonts/AvenirLTStd-Black.otf');
+}
+
+/* Global Styles */
+body {
+  background-color: #121212;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  margin: 0;
+  /* Remove default margin */
+  box-sizing: border-box;
+  /* Ensure consistent box sizing */
+}
+
+/* Prevent horizontal overflow for all elements */
+* {
+  box-sizing: border-box;
+  /* Include padding and border in element width/height */
+}
+
+html {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling at the root level */
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0rem 2rem;
+  /* Ensure containers do not exceed the viewport width */
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* With NO delay */
+.animate-diagonal-tr {
+  animation: diagonal-tr 2s ease-in-out infinite;
+}
+
+.animate-diagonal-bl {
+  animation: diagonal-bl 2s ease-in-out infinite;
+}
+
+/* With delay to create alternating motion */
+.animate-diagonal-tl-delay {
+  animation: diagonal-tl 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-diagonal-br-delay {
+  animation: diagonal-br 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes diagonal-tl {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, -6px);
+  }
+}
+
+@keyframes diagonal-tr {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, -6px);
+  }
+}
+
+@keyframes diagonal-bl {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, 6px);
+  }
+}
+
+@keyframes diagonal-br {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, 6px);
+  }
+}
