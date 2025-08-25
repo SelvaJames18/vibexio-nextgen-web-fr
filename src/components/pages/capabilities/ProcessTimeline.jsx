@@ -179,7 +179,7 @@ const ProcessTimeline = () => {
             <motion.img
               src={arrowImg}
               alt="arrow"
-              className="hidden lg:block w-[169.6px] h-[173.3px] absolute top-[180px]  xl:right-[500px] lg:right-[562px] min-[1025px]:right-[560px] opacity-66"
+              className="hidden lg:block w-[169.6px] h-[173.3px] absolute top-[180px]  xl:right-[496px] lg:right-[552px] min-[1025px]:right-[570px] opacity-66"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -231,7 +231,7 @@ const ProcessTimeline = () => {
             className=" absolute w-[50px] h-[50px] lg:hidden left-[90px] top-[380px] md:left-[144px]"
           />
           <motion.div
-            className="bg-black absolute left-[72px] top-[460px] sm:left-[67px] sm:top-[50px] md:left-[110px] md:top-[430px] lg:left-[184px] lg:top-[460px] xl:left-[360px] xl:top-[480px] w-[0.4px]"
+            className="bg-black absolute left-[72px] top-[620px] xsm:left-[72px] xsm:top-[460px] smm:left-[72px] smm:top-[460px] sm:left-[73px] sm:top-[400px] md:left-[110px] md:top-[430px] lg:left-[184px] lg:top-[460px] xl:left-[360px] xl:top-[480px] w-[0.4px]"
             initial={{ height: 0, opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{
